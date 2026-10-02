@@ -1,15 +1,32 @@
-# Linux Kernel Module build files
+# Linux kernel module build output
 *.o
 *.ko
 *.mod
 *.mod.c
 *.cmd
+.*.cmd
+*.symvers
 Module.symvers
 modules.order
-Cyber Security Project 10 - 2026.pdf
-Cyber Security Project 11 - 2026.pdf
-Firewall task 12 - NetFilter Integration.pdf
+.tmp_versions/
 
 # firewall-agent build output
 firewall-agent/firewall-agent
 
+# Logs and local environment files
+*.log
+*.env
+!*.env.example
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Course/reference documents
+*.pdf

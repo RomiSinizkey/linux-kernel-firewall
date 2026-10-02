@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Installs the firewall kernel module and firewall-agent as a systemd
 # service on Ubuntu, so both survive a reboot without manual insmod /
-# manual agent launches (Project 12, Task 7).
+# manual agent launches.
 #
 # Run this from inside the Ubuntu VM, after building both components:
 #   cd kernel && make && cd ../firewall-agent && make && cd ..

@@ -16,9 +16,8 @@
 #include "firewall_protocol.h"
 
 /*
- * Node.js rules endpoint (see src/adapters/inbound/http/controllers/
- * firewallController.ts and GetRulesUseCase.ts in the firewall-RomiSinizkey
- * repo). "?type=ip" makes the server return only:
+ * Rules endpoint of the companion Node.js firewall API. "?type=ip" makes the
+ * server return only:
  *
  *   { "ips": { "blacklist": [ {id,type,mode,value,active}, ... ],
  *               "whitelist": [ ... ] } }
@@ -29,7 +28,7 @@
 #define DEFAULT_RULES_URL "http://localhost:3000/api/firewall/rules?type=ip"
 
 /* Default polling interval, in seconds, used when FIREWALL_POLL_INTERVAL_SECONDS
- * is unset or invalid. Matches the PDF's own suggested value for this stage.
+ * is unset or invalid.
  */
 #define DEFAULT_POLL_INTERVAL_SECONDS 10
 
